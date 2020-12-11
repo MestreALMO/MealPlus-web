@@ -18,16 +18,15 @@ export const Content = styled.div`
   max-width: 640px;
 
   h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
     font-size: 80px;
   }
 
   h2 {
-    font-size: 30px;
-  }
-
-  h1,
-  h2 {
     font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 30px;
   }
 `;
 
