@@ -35,19 +35,13 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  input {
-    width: 280px;
-    height: 30px;
-    padding: 5px;
-    margin-bottom: 5px;
-  }
+  width: 300px;
 
   button {
     height: 25px;
     width: 90px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin: 6px 0 6px 0;
   }
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineMail, HiOutlineLockClosed } from 'react-icons/hi';
 
 import Input from '../../components/Input/Input';
 
@@ -13,7 +13,7 @@ const Dashboard: React.FC = () => {
         <h2>Welcome to our establishment</h2>
         <Form>
           <Input placeholder="E-mail" icon={HiOutlineMail} />
-          <Input placeholder="Password" />
+          <Input placeholder="Password" icon={HiOutlineLockClosed} />
           <button type="submit">Log-in</button>
         </Form>
         <a href="forgot">Forgot password?</a>

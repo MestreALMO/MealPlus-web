@@ -8,12 +8,13 @@ export const Container = styled.div`
   border: 2px solid ${backgroundColor};
   padding: 4px;
   border-radius: 10px;
+  width: 100%;
 
   display: flex;
   align-items: center;
 
   svg {
-    margin-left: 6px;
+    margin: 0 6px 0 6px;
     color: ${textColor};
   }
 
