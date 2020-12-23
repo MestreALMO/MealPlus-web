@@ -27,6 +27,27 @@ export const Content = styled.div`
     font-family: 'Dancing Script', cursive;
     font-weight: 400;
     font-size: 30px;
+    margin-bottom: 30px;
+  }
+`;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    width: 280px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    height: 25px;
+    width: 90px;
+    font-weight: 700;
+    margin-bottom: 5px;
   }
 `;
 
