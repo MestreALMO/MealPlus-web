@@ -3,8 +3,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './routes';
 import GlobalStyle from './styles/global';
+// import AuthContest from './context/AuthContext';
 
-const App = () => (
+const App: React.FC = () => (
   <>
     <BrowserRouter>
       <Routes />

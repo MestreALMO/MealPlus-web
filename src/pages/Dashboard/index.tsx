@@ -17,7 +17,7 @@ const Dashboard: React.FC = () => {
           <button type="submit">Log-in</button>
         </Form>
         <a href="forgot">Forgot password?</a>
-        <a href="register">Register</a>
+        <a href="SignUp">Sign Up</a>
       </Content>
       <Background />
     </Container>
