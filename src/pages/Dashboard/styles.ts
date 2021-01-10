@@ -1,54 +1,73 @@
 import styled from 'styled-components';
-
-import dashboardImg from '../../assets/dashboard.jpg';
+import { shade } from 'polished';
+import signInBackgroundImg from '../../assets/dashboard.jpg';
 
 export const Container = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: stretch;
+  height: 100vh; /**exibir 100% do view por height(vh), forçar tudo a ser exibido na tela */
+
+  display: flex; /**Faz os itens serem exibidos lado a lado */
+  align-items: stretch; /**faz os itens incluídos aqui, Content e o Background, ocuparem o tamanho total da página */
 `;
 
 export const Content = styled.div`
-  background-color: #220601;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /**pra o flex ficar organizado por coluna */
   align-items: center;
+
+  place-content: center;
+  /*
+  //"place-content: center;" equivale os códigos abaixo:
   justify-content: center;
-  flex: 1;
-  max-width: 640px;
+  align-items: center;
+  */
+  width: 100%; /**conteúdo vai ser apresentada ao todo dela */
+  max-width: 700px; /**tamanho da conteúdo está limitado a 700px */
 
-  h1 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    font-size: 80px;
+  form {
+    margin: 80px 0;
+    width: 340px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 24px;
+    }
+
+    a {
+      color: #d4ede8;
+      display: block;
+      margin-top: 24px;
+      text-decoration: none; /**tirar sublinhado */
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${shade(0.2, '#f4ede8')};
+      }
+    }
   }
 
-  h2 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 400;
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-`;
+  > a {
+    /**Vai estilizar o "a" apenas dentro do "Content", deixando os "a" dentro dos outro níveis de estilização sem modificar */
+    color: #ff9000;
+    display: block;
+    margin-top: 24px;
+    text-decoration: none; /**tirar sublinhado */
+    transition: color 0.2s;
 
-export const FormContent = styled.div`
-  Form {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 300px;
-  }
 
-  button {
-    height: 25px;
-    width: 90px;
-    font-weight: 700;
-    margin: 6px 0 6px 0;
+    svg {
+      margin-right: 16px;
+    }
+
+    &:hover {
+      color: ${shade(0.2, '#ff9000')};
+    }
   }
 `;
 
 export const Background = styled.div`
-  flex: 1;
-  background: url(${dashboardImg}) no-repeat center;
-  background-size: cover;
+  flex: 1; /**ocupa todo o espaço, menos os 700px que definimos pro "Content" */
+  background: url(${signInBackgroundImg}) no-repeat center;
+  background-size: cover; /**Forçar a ocupar 100% do bg */
 `;

@@ -3,14 +3,14 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './routes';
 import GlobalStyle from './styles/global';
-import AuthContest from './context/AuthContext';
+import { AuthProvider } from './context/AuthContext';
 
 const App: React.FC = () => (
   <>
     <BrowserRouter>
-      <AuthContest.Provider value={{ name: 'diego' }}>
+      <AuthProvider>
         <Routes />
-      </AuthContest.Provider>
+      </AuthProvider>
     </BrowserRouter>
     <GlobalStyle />
   </>

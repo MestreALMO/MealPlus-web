@@ -4,7 +4,7 @@ import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
 import { Form } from '@unform/web';
 
-import Input from '../../components/Input/Input';
+// import Input from '../../components/Input/Input';
 import { Container, Content, Background, FormContent } from './styles';
 import getValidationErrors from '../../utils/getValidationErrors';
 
@@ -40,9 +40,9 @@ const Dashboard: React.FC = () => {
 
         <FormContent>
           <Form ref={formRef} onSubmit={handleSubmit}>
-            <Input placeholder="Name" icon={HiUser} />
+            {/* <Input placeholder="Name" icon={HiUser} />
             <Input placeholder="E-mail" icon={HiOutlineMail} />
-            <Input placeholder="Password" icon={HiOutlineLockClosed} />
+            <Input placeholder="Password" icon={HiOutlineLockClosed} /> */}
             <button type="submit">Done</button>
           </Form>
         </FormContent>
