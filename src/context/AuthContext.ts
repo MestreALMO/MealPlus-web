@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
 interface AuthContextData {
-    name:string;
+  name: string;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);

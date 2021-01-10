@@ -31,11 +31,13 @@ export const Content = styled.div`
   }
 `;
 
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
+export const FormContent = styled.div`
+  Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
 
   button {
     height: 25px;
