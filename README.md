@@ -11,7 +11,7 @@
 This is a project of mine that I want to make a system that could be used in restaurants. I'm using ReactJS with TS to make it all.
 
 <p align="center">
-  <img src="https://github.com/MestreALMO/MealPlus-web/blob/master/_README.md/app.gif?raw=true" />
+  <img src="https://github.com/MestreALMO/MealPlus-web/blob/main/_README.md/app.gif?raw=true" />
 </p>
 
 </br>
@@ -101,7 +101,7 @@ With that the app will be running!!!
 <strong>It is still a work in progress, soon i'll add more things to the system as well as images of it running right here.</strong>
 
 <p align="center">
-  <img src="https://github.com/MestreALMO/MealPlus-web/blob/master/_README.md/app.gif?raw=true" />
+  <img src="https://github.com/MestreALMO/MealPlus-web/blob/main/_README.md/app.gif?raw=true" />
 </p>
 
 </br>
